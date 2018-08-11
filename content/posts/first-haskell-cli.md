@@ -119,3 +119,18 @@ Hello world
    by the Haskell compiler: `Main`, `Main.hi`, and `Main.o`.
 3. Finally, you can execute the `Main` file inside the container by running
    `docker run -v $PWD:/src -w /src -it my-haskell ./Main`.
+
+Ok that's neat but it's a lot to type. Let's make it smaller with a small
+shell script called `run.sh`.
+
+```bash
+docker run -v $PWD:/src -w /src -it my-haskell $params
+```
+
+And then make it executable with `chmod +x ./run.sh`. Then you can run
+`./run.sh` to start the container. You could also create an alias which
+allows you to easily chain commands together like `haskell ./Main`.
+
+```bash
+alias haskell="docker run -v $PWD:/src -w /src -it my-haskell"
+```
