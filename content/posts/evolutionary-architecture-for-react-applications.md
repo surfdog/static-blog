@@ -29,7 +29,7 @@ Keywords:
 
 ### Microkernal (monorepo)
 
-### More patterns: message broker, EBS SOA, microservices
+### More patterns: message broker, ESB SOA, microservices
 
 ### Microservices (microfrontends)
 
