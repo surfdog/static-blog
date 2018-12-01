@@ -23,11 +23,10 @@ before_install:
   - git submodule update --init --recursive
 
 install:
-  - mkdir $HOME/src
-  - cd $HOME/src
   - git clone https://github.com/gohugoio/hugo.git
   - cd hugo
   - go install
+  - cd ..
 
 script:
   - hugo -d public
