@@ -23,7 +23,7 @@ before_install:
   - git submodule update --init --recursive
 
 install:
-  - go get -v github.com/spf13/hugo
+  - go get -v github.com/gohugoio/hugo
 
 script:
   - hugo -d public
