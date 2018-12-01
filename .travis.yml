@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - 1.9.2
+  - 1.11
 
 addons:
   ssh_known_hosts: monicalent.com
@@ -23,7 +23,11 @@ before_install:
   - git submodule update --init --recursive
 
 install:
-  - go get -v github.com/gohugoio/hugo
+  - mkdir $HOME/src
+  - cd $HOME/src
+  - git clone https://github.com/gohugoio/hugo.git
+  - cd hugo
+  - go install
 
 script:
   - hugo -d public
