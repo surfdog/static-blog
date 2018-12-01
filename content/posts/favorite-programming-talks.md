@@ -1,7 +1,9 @@
----
-title: "Technical talks that'll change how you think"
-date: 2018-12-01T13:50:02+01:00
----
++++
+author = "Monica"
+date = "2018-12-01T13:50:02+01:00"
+tags = ["talks"]
+title = "Technical talks that'll change how you think"
++++
 
 It's not that often that I go to a conference or watch a talk on YouTube that
 truly changes the way I think about programming or software development. Even
