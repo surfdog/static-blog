@@ -1,6 +1,6 @@
 +++
 author = "Monica"
-date = "2018-12-01T13:50:02+01:00"
+date = "2019-01-01T13:50:02+01:00"
 tags = ["talks"]
 title = "Technical talks that'll change how you think"
 +++
