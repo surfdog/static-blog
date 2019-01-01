@@ -53,9 +53,7 @@ practical OOP pitfalls with real code. Sandi Metz is a fantastic and engaging
 speaker, and you will take something away from this talk that you can apply
 straight into code on your next working day.
 
-## Programming in Anger
-
-> Link not yet available, but should be in a few days
+## [Programming in Anger](https://www.youtube.com/watch?v=8o01g6C7jWg)
 
 By David Nolen, lead developer of ClojureScript -- [@swannodette](https://twitter.com/swannodette)
 
