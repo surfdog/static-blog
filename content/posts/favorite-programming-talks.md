@@ -82,7 +82,7 @@ Finally a software architecture talk with a good mix of code and context,
 that's easy to grasp but not so trivial as to be meaningless. Gary talks about
 the pitfalls of mocking and integration testing, figuring out where to
 place boundaries in your application, and a practical look at how to implement
-"functional core imperitave shell". Very useful no matter what programming
+"functional core imperative shell". Very useful no matter what programming
 language or framework you're using.
 
 ## [Zebras All the Way Down](https://www.youtube.com/watch?v=fE2KDzZaxvE)
