@@ -2,7 +2,7 @@
 author = "Monica"
 date = "2019-01-01T13:50:02+01:00"
 tags = ["talks"]
-title = "Technical talks that change how you think"
+title = "Tech talks that'll change how you think"
 description: "Some of the best technical talks I've heard over the years."
 +++
 
