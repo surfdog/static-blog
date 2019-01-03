@@ -43,7 +43,8 @@ By Rich Hickey, inventor of Clojure and founder of Datomic -- [@richhickey](http
 Who doesn't cite "Simple Made Easy" as one of their favorite talks? Here
 Rich Hickey talks about the difference between things that are simple
 and things that are easy. You'll walk away with a different perspective
-you can use to make technical choices.
+you can use to make technical choices. I re-watch this talk annually and
+get something new out of it every time.
 
 ## [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE)
 
