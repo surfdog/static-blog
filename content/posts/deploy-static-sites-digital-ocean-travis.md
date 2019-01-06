@@ -144,7 +144,7 @@ to travis every time you push to an open pull request or to your master branch.
 language: go
 
 go:
-  - 1.9.2
+  - 1.11
 
 addons:
   ssh_known_hosts: website.com
@@ -156,7 +156,13 @@ before_install:
   - mv travis_rsa ~/.ssh/id_rsa
 
 install:
-  - go get -v github.com/spf13/hugo
+  - export TRAVIS_BUILD_DIR=$(pwd)
+  - mkdir $HOME/src
+  - cd $HOME/src
+  - git clone https://github.com/gohugoio/hugo.git
+  - cd hugo
+  - go install
+  - cd $TRAVIS_BUILD_DIR
 
 script:
   - hugo -d public
