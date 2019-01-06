@@ -54,6 +54,10 @@ by enabling additional sources in Ubuntu. The instructions are copied here:
 4.  Install nginx-module-image-filter deb package:<br/>
     `sudo apt-get install nginx-module-image-filter`
 
+> _Note: If you are in the position of installing Nginx from scratch, apparently
+> it is possible to enable this module at that time. But I'm going to guess that
+> most of us are installing it on an existing server. _
+
 ## Enable the Nginx image_filter module
 
 Open up `/etc/nginx/nginx.conf` and in the outermost scope (not inside `events` or `http`
@@ -238,6 +242,13 @@ I just hacked around it in the shortcode template:
 
 Obviously this code is not super robust but...it's a blog. So far so good ;)
 
+> _Note: I did think about **using query parameters for the width** instead of
+> putting it all in the path. Unfortunately, Nginx doesn't seem to support
+> extracting query parameters in the location directive. That said, I saw some
+> examples
+> of [people trying to work around this](https://gist.github.com/phpdude/1451684/859fac2f02d5d623da7de0b24afe4083ebeb0bb4)
+> but from the comments it's unclear if they were successful._
+
 ## Results
 
 I did a few things to improve image loading on the blog to appease Google:
@@ -249,6 +260,17 @@ I did a few things to improve image loading on the blog to appease Google:
 These things put together **brought the pagespeed score on my blog's homepage
 to 92**! Google still hates that some of its own scripts (looking at you Google
 Maps) aren't cached long enough, but I'm finally "in the green" with Google.
+Do note that I have done more than just these things to achieve this score,
+such as inlining critical CSS, leveraging caching, etc.
+
+<br/>
+<center style="font-size: 1.5em; text-decoration: underline">Mobile Score</center>
+
+![PageSpeed Score Mobile](/blog/images/pagespeed-mobile.png "PageSpeed Score Mobile")
+
+<center style="font-size: 1.5em; text-decoration: underline">Desktop Score</center>
+
+![PageSpeed Score Desktop](/blog/images/pagespeed-desktop.png "PageSpeed Score Desktop")
 
 I can't speak for how this would scale, to give you an idea, my blog gets
 about 30k pageviews per month / 1-1.3k per day, so it's not massive, but it
