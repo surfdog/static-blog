@@ -4,6 +4,7 @@ comments = true
 date = "2013-12-06 16:03:09+00:00"
 slug = "set-up-nginx-and-uwsgi"
 title = "Set up Nginx and uWSGI"
+tags = ["nginx", "uwsgi"]
 wordpress_id = 156
 +++
 
