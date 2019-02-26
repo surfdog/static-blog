@@ -2,9 +2,10 @@ baseurl = "https://monicalent.com/blog/"
 title = "Monica Lent's Blog"
 theme = "pickles"
 languageCode = "en-us"
-copyright = "&copy; Monica Lent 2017"
+copyright = "&copy; Monica Lent 2019"
 paginate = 5
 paginatePath = "page"
+enableEmoji = true
 
 [Author]
     name = "Monica"
@@ -17,8 +18,8 @@ paginatePath = "page"
     headline = "Monica Lent's Blog"
     description = "A software development blog with a dash of linux. You probably got here by googling an error message ˆ_ˆ"
     subtitle = "A software development blog with a dash of linux. You probably got here by googling an error message ˆ_ˆ"
-    logo = "/favicon.png"
-    favicon = "/favicon.png"
+    logo = "favicon.png"
+    favicon = "favicon.png"
     github = "mlent"
     gplus = "https://google.com/+MonicaLent"
     twitter = "monicalent"
