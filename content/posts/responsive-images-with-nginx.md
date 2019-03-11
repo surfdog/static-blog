@@ -154,6 +154,10 @@ server {
   }
 }
 
+# Cache settings
+
+proxy_cache_path /tmp/nginx-images-cache/ levels=1:2 keys_zone=images:10m inactive=24h max_size=100m;
+
 # Your other server
 server {
   listen 443 ssl;
