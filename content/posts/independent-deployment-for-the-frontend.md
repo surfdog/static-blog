@@ -13,7 +13,10 @@ time to explain how the demo is working in more detail.
 {{% callout %}}
 
 Before diving in, I want to be clear that you shouldn't take this post at
-face value as advice for your personal situation. 
+face value as advice for your personal situation. Here I'm presenting a few
+different means to make it possible to deploy part of your frontend separately.
+My examples use React, though I'm rather sure you can achieve this using
+other libraries or frameworks.
 
 {{% /callout %}}
 
@@ -49,11 +52,11 @@ Let's get started!
 I think it's helpful to go over some of the main challenges we have to solve
 when wanting to deploy a piece of our frontend separately.
 
-The most obvious issue is this: How can I get my component, which webpack is
-not aware of at build-time, so I can use it somewhere? If I simply
-`fetch` a JavaScript file, all I get back is a bunch of text and no
-clear way to turn that text into something that spits out a module I can
-treat as a React component.
+The most obvious issue from the frontend perspective is this: How can I get my
+component, which webpack is not aware of at build-time, so I can use it
+somewhere? If I simply `fetch` a JavaScript file, all I get back is a bunch of
+text and no clear way to turn that text into something that spits out a module
+I can treat as a React component.
 
 Read on to learn how we can load a separately built module in
 an async manner, and then use the component in that module inside React.
@@ -184,6 +187,11 @@ It seems simple but as we'll see, it's not totally straightforward. Let's
 have a look at a couple of different approaches. You may find that one
 approach works better for you.
 
+1. **Native browser modules** --
+3. **SystemJS** --
+2. **Eval and babel in the browser** --
+4. **Script tags and window** --
+
 #### Approach #1: Native browser modules
 
 Let's assume that the module we want to load today is available to our
@@ -235,12 +243,6 @@ looks pretty straightforward with [import maps](https://github.com/WICG/import-m
 **Cons** -- Not supported in all browsers. [Shims exist](https://github.com/guybedford/es-module-shims).
 You still need to bundle your code (not shown here) in order to transpile like
 JSX.
-
-#### Approach #2: Eval
-
-#### Approach #3: Script tags and window
-
-#### Approach #4: SystemJS
 
 ### Serving components from a microservice
 
