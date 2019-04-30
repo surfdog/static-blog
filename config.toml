@@ -1,5 +1,5 @@
-baseurl = "https://monicalent.com/blog/"
-title = "Monica Lent's Blog"
+baseurl = "https://monicalent.com/"
+title = "Monica Lent"
 theme = "pickles"
 languageCode = "en-us"
 copyright = "&copy; Monica Lent 2019"
@@ -15,9 +15,9 @@ enableEmoji = true
     tag = "tags"
 
 [Params]
-    headline = "Monica Lent's Blog"
-    description = "A software development blog with a dash of linux. You probably got here by googling an error message ˆ_ˆ"
-    subtitle = "A software development blog with a dash of linux. You probably got here by googling an error message ˆ_ˆ"
+    headline = "Monica Lent"
+    description = "Software engineer based in Berlin, specializing in ReactJS, NodeJS, design systems, and scalable frontend architecture."
+    subtitle = "Software engineer based in Berlin"
     logo = "favicon.png"
     favicon = "favicon.png"
     github = "mlent"
@@ -27,12 +27,12 @@ enableEmoji = true
     avatar = "https://monicalent.com/assets/images/image01.jpg"
     author = "Monica Lent"
     authorwebsite = "http://monicalent.com"
-    bio = "Software developer living and working in Berlin."
+    bio = "Software engineer based in Berlin"
     contact = "lent.monica@gmail.com"
     linkedin = "monica-lent-542122145"
 
 [Permalinks]
-    posts = "/:year/:month/:day/:filename/"
+    blog = "/:section/:year/:month/:day/:filename/"
 
 [[menu.main]]
     name = "Home"
@@ -40,11 +40,21 @@ enableEmoji = true
     weight = 1
 
 [[menu.main]]
-    name = "Website"
-    url = "https://monicalent.com/"
+    name = "About"
+    url = "/about"
     weight = 2
 
 [[menu.main]]
-    name = "About"
-    url = "https://monicalent.com/#about"
+    name = "Speaking"
+    url = "/speaking"
+    weight = 3
+
+[[menu.main]]
+    name = "Writing"
+    url = "/blog"
     weight = 4
+
+[[menu.main]]
+    name = "Work with me"
+    url = "/work-with-me"
+    weight = 5
