@@ -1,6 +1,6 @@
 +++
 author = "Monica"
-type = "post"
+type = "posts"
 comments = true
 date = "2014-06-13 09:39:46+00:00"
 slug = "install-node-js-on-debian-squeeze"

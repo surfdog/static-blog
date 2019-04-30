@@ -1,4 +1,5 @@
 +++
+type = "posts"
 author = "Monica"
 comments = true
 date = "2014-06-15 12:21:41+00:00"

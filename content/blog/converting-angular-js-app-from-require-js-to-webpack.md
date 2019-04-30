@@ -1,6 +1,6 @@
 +++
 author = "Monica"
-type = "post"
+type = "posts"
 comments = true
 tags = ["angular", "webpack", "require js"]
 date = "2015-08-03 18:29:56+00:00"

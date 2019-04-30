@@ -1,4 +1,5 @@
 +++
+type = "posts"
 author = "Monica"
 date = "2017-07-23T14:29:42+02:00"
 tags = ["react", "redux", "javascript"]

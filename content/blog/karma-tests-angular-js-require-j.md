@@ -1,6 +1,7 @@
 +++
 author = "Monica"
 comments = true
+type = "posts"
 date = "2015-02-11 15:53:00+00:00"
 slug = "karma-tests-angular-js-require-j"
 title = "Karma tests with AngularJS + RequireJS"

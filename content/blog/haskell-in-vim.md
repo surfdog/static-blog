@@ -1,4 +1,5 @@
 +++
+type = "posts"
 title = "Writing Haskell with Vim"
 description = "Tools you can you use with Vim to make writing Haskell more fun, plus troubleshooting tips"
 author = "Monica Lent"

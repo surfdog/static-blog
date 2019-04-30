@@ -1,4 +1,5 @@
 +++
+type = "posts"
 author = "Monica"
 tags = ["apache"]
 date = "2013-03-27T02:23:36+00:00"

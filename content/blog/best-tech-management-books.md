@@ -1,4 +1,5 @@
 ---
+type: posts
 title: "Management books developers should read, too"
 date: 2019-02-26T21:44:06+01:00
 ---

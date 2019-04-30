@@ -1,4 +1,5 @@
 +++
+type = "posts"
 title = "Set up 2FA on Ubuntu with YubiKeys"
 description = "Use your yubikey, combined with your publickey, to ssh into your favorite Ubuntu server with the touch of a finger."
 author = "Monica Lent"

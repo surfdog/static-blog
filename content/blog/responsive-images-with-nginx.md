@@ -1,4 +1,5 @@
 ---
+type: "posts"
 title: "Responsive Images With Nginx on Ubuntu"
 description: "Here's how to configure Nginx to create responsive images for you on demand."
 author: "Monica Lent"
