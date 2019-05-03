@@ -194,28 +194,31 @@ approach works better for you.
   <u>Pros:</u> Native. Future-proof. Sharing dependencies (if you want to do that)
   looks pretty straightforward with [import maps](https://github.com/WICG/import-maps) and
   [webpack externals](https://webpack.js.org/configuration/externals/).<br/>
-  <u>Cons:</u> Native module transpilation target is not yet supported by Webpack.
-  Not supported in all browsers. [Shims exist](https://github.com/guybedford/es-module-shims).
+  <u>Cons:</u> Native module transpilation target is [not yet supported by Webpack](https://github.com/webpack/webpack/issues/2933)
+  though there seems to be a [plugin](https://www.npmjs.com/package/webpack-babel-multi-target-plugin)
+  that can do it.  Not supported in all browsers. [Shims exist](https://github.com/guybedford/es-module-shims).
   You still need to bundle your code (not shown here) in order to
-  transpile like JSX.<br/><br/>
+  transpile, e.g. JSX.<br/><br/>
 
 3. **SystemJS** -- <br/>
-  <u>Pros:</u> Acts as a fallback for native ES modules. Small footprint.
+  <u>Pros:</u> Acts as a fallback for native ES modules. Small footprint. [Can
+  finally be used with webpack](https://github.com/systemjs/systemjs#compatibility-with-webpack)
+  as of April 12, 2019.
   <br/>
-  <u>Cons:</u> Not officially supported by webpack (you need to switch to Rollup).
+  <u>Cons:</u> No major cons, it's just another tool to add to your toolchain.
   <br/><br/>
 
-2. **Eval and babel in the browser** -- <br/>
+2. **Eval and babel in the browser** -- ([Code sample](https://codepen.io/qborreda/pen/JZyEaj))<br/>
   <u>Pros:</u> Doesn't require exposing anything to window. You can continue
   to use webpack. Works in any browser.
   <br/>
-  <u>Cons:</u> You ship a transpiler with your app code (heavy). Use of `eval`.
+  <u>Cons:</u> You ship a transpiler with your app code. Use of `eval`.
   <br/><br/>
 
 4. **Script tags and window** -- <br/>
-  <u>Pros:</u> Can be added to your existing toolchain. 
+  <u>Pros:</u> Can likely be added to your existing toolchain without major modifications.
   <br/>
-  <u>Cons:</u> Usage of `window`.
+  <u>Cons:</u> Usage of `window` (potential clashes). Duplication of webpack runtime code.
   <br/><br/>
 
 For the sake of simplicity, my demo uses approach #4. While the usage of
@@ -225,6 +228,9 @@ exposing it. So you never need to deploy the host application to change the
 name of the fragment component. Two, you can define fitness functions and
 an abstract pipline during CI to ensure that the fragments are properly
 formatted.
+
+I also think that #4 keeps the tooling to a minimum and lets us focus more
+on the mechanics and deployment.
 
 You may have different requirements and find another approach to have better
 tradeoffs. Feel free to select the approach that works for you, or share
