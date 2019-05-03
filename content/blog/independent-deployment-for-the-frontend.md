@@ -1,6 +1,7 @@
 ---
-title: "Independent Deployment for the Frontend with Docker and Kubernetes"
+title: "[DRAFT] Independent Deployment for the Frontend with Docker and Kubernetes"
 description: "So you want to deploy part of your monolithic frontend app independently? Learn how."
+type: "posts"
 date: 2019-03-15T11:36:30+01:00
 ---
 
