@@ -8,7 +8,7 @@ date: 2019-03-15T11:36:30+01:00
 I recently gave a talk entitled, "Independent deployment for the Frontend
 with Docker and Kubernetes". As it turns out, the topic of wanting to deploy
 independently resonated with quite a lot of people. I received emails and
-tweets with quite a few specific questions, and wanted to take the time to
+tweets with a number of few specific questions, and wanted to take the time to
 explain how the demo is working in more detail.
 
 {{% callout %}}
@@ -21,15 +21,22 @@ other libraries or frameworks.
 
 {{% /callout %}}
 
-- Purpose and goals
-- Main challenges
-  - Loading components remotely
-  - Serving components from a microservice
-  - Deployment
-- What's missing?
-- Resources
+- [Purpose and goals](#purpose-and-goals)
+- [Main challenges](#main-challenges)
+  - [Loading components remotely](#load-components-remotely)
+  - [Serving components from a microservice](#serve-components-from-a-microservice)
+  - [Deployment](#deployment)
+- [What's missing?](#whats-missing)
+  - [Deduplicating shared dependencies](#deduplicating-shared-dependencies)
+  - [Data and caching](#data-and-caching)
+  - [Visual consistency](#visual-consistency)
+  - [How to share code](#how-to-share-code)
+  - [End-to-end testing](#end-to-end-testing)
+  - [What about being framework agnostic?](#framework-agnostic)
+- [Final words](#final-words)
+- [Resources](#resources)
 
-## Purpose and goals
+## Purpose and goals {#purpose-and-goals}
 
 The goal of the demo, and this post, is to show one way you can achieve
 independent deployment for the frontend, especially if you're working in
@@ -48,7 +55,7 @@ How you adapt these concepts and technologies is your use case is up to you
 
 Let's get started!
 
-## Main challenges
+## Main challenges {#main-challenges}
 
 I think it's helpful to go over some of the main challenges we have to solve
 when wanting to deploy a piece of our frontend separately.
@@ -77,7 +84,7 @@ we want to load is not known to webpack at build time.
 
 {{% /callout %}}
 
-### Loading components remotely
+### Loading components remotely {#load-components-remotely}
 
 Let's start by looking at the kind of API we want to achieve for our
 remote-loading component, and then try to fill in the gaps.
@@ -139,9 +146,9 @@ Somehow, we need to accomplish three things:
 2. Load that Javascript into the browser
 3. Extract the Component we want and use it
 
-For #1 this is actually solved pretty easily using the
+For #1 this is actually solved for us by the
 [webpack-assets-plugin](https://www.npmjs.com/package/assets-webpack-plugin),
-you can generate a `manifest.json` file after every build that looks something
+which can generate a `manifest.json` file after every build that looks something
 like this:
 
 ```json
@@ -200,25 +207,27 @@ approach works better for you.
   You still need to bundle your code (not shown here) in order to
   transpile, e.g. JSX.<br/><br/>
 
-3. **SystemJS** -- <br/>
+3. **SystemJS**<br/>
   <u>Pros:</u> Acts as a fallback for native ES modules. Small footprint. [Can
   finally be used with webpack](https://github.com/systemjs/systemjs#compatibility-with-webpack)
-  as of April 12, 2019.
+  as of April 12, 2019. Can alternatively be used with Rollup.
   <br/>
-  <u>Cons:</u> No major cons, it's just another tool to add to your toolchain.
+  <u>Cons:</u> If used with webpack, duplication of webpack runtime code.
   <br/><br/>
 
-2. **Eval and babel in the browser** -- ([Code sample](https://codepen.io/qborreda/pen/JZyEaj))<br/>
+2. **Eval and babel in the browser** ([Code sample](https://codepen.io/qborreda/pen/JZyEaj), not mine)<br/>
   <u>Pros:</u> Doesn't require exposing anything to window. You can continue
   to use webpack. Works in any browser.
   <br/>
-  <u>Cons:</u> You ship a transpiler with your app code. Use of `eval`.
+  <u>Cons:</u> You ship a transpiler with your app code. Use of `eval`. If used with
+  webpack, duplication of webpack runtime code.
   <br/><br/>
 
-4. **Script tags and window** -- <br/>
+4. **Script tags and window** <br/>
   <u>Pros:</u> Can likely be added to your existing toolchain without major modifications.
   <br/>
-  <u>Cons:</u> Usage of `window` (potential clashes). Duplication of webpack runtime code.
+  <u>Cons:</u> Usage of `window` (potential clashes). If used with webpack,
+  duplication of webpack runtime code.
   <br/><br/>
 
 For the sake of simplicity, my demo uses approach #4. While the usage of
@@ -230,13 +239,17 @@ an abstract pipline during CI to ensure that the fragments are properly
 formatted.
 
 I also think that #4 keeps the tooling to a minimum and lets us focus more
-on the mechanics and deployment.
+on the mechanics and deployment, which is the goal of the demo.
+
+That said, if I were to write the demo again I would first try approach #2
+now that webpack supports SystemJS as a target.
 
 You may have different requirements and find another approach to have better
 tradeoffs. Feel free to select the approach that works for you, or share
-another approach.
+another approach. Hopefully this gives you a good starting point for
+your exploration!
 
-### Serving components from a microservice
+### Serving components from a microservice {#serve-components-from-a-microservice}
 
 Now that we are transpiling and bundling our components, as well as producing
 a manifest file that will tell consumers of the component how to access it,
@@ -529,7 +542,11 @@ Building the docker files and applying the helm charts is something you'd need
 to do for both the host app and the fragment app. When more fragments are present,
 it's also possible to recursively apply helm charts from a root directory.
 
-### Deployment
+> **NOTE** -- These are a lot of long commands for a developer to learn
+> and memorize. Going forward, I would abstract out a lot of the repetition
+> into a shared CLI.
+
+### Deployment {#deployment}
 
 Once we see the app running on our local machine, we want to run it in
 a cluster somewhere in the cloud. The easiest option is to use GKE (Google
@@ -654,17 +671,150 @@ to your cluster, push to master branch, and see them reflected on
 your "production" cluster. You can access them using the IP address assigned
 to your Nginx ingress resource.
 
-## What's missing?
+## What's missing? {#whats-missing}
 
-- Deduplicating shared dependencies
-- Caching / sharing of API data
-- Sharing UI through a design system
+Beyond the technical implementation of loading a component remotely,
+embedding it, and deploying it independently, there are a number of
+considerations to take into account. While many of these points could be
+their own posts, I'll share a few words about them briefly to give you
+a starting point in case you want to go further.
+
+### Deduplicating shared dependencies
+
+Depending on your situation, you may want to share e.g. one "copy" of
+React across all the different pages in your app. One reason for this is
+that sometimes, different versions of the same library can lead to conflicts.
+Another reason is simply bundle size and performance.
+
+Naturally, the trade off is a degree of dependency between your independently
+deployable subcomponents -- if you want to upgrade that library, there is a
+risk of regression in each subcomponent. And if you have a large number of
+teams, each with their own subcomponents, you run the risk of needing to
+coordinate a lot of regression testing during library upgrades (unless, of
+course, you have a robust and comprehensive set of tests covering the full test
+pyramid -- realistically most people I speak with are not in this
+luxurious position).
+
+As I shared earlier, if you decide that sharing some of these larger libraries
+is the right approach for your app, take a look into the following two
+options:
+
+- [Webpack externals](https://webpack.js.org/configuration/externals/)
+- [ES modules and import maps](https://github.com/WICG/import-maps)
+
+Depending on your application specifics, one or the other might be more
+appropriate.
+
+### Data and caching
+
+What do you do in a client application when the same data is needed in many
+places? Or you want to avoid the client needing to re-download the same data
+when it visits different pages? This is tricky because anything you share
+can quickly become a dependency that causes side effects. This is also a key
+reason that microservices should have their own data sources (e.g. own
+database) rather than a shared database across all services.
+
+One of the most common approaches for sharing data in the microservices world
+is through an event bus. But how can you avoid getting into a giant mess
+of brittle events, like we had with code littered with `$rootScope.$broadcast`
+back in the day?
+
+Consider a mixed approach, where frequently changing data that must not be
+stale (think: the current user object) is exposed to all subpages via an API
+layer that provides an observable to subcomponents consuming information.
+This core information is always available and up to date.
+
+The rest of the data can be stored in a separate API layer per page (or per
+subcomponent, depending on what level of granularity your situation requires),
+provided in a standard format via a version library (ideally also with
+static types). This ensures consistency, promotes good practices between
+the different subpages, yet ensures that only the data most critical to the
+user experience is shared between pages, eliminating most data-related
+side effects.
+
+> **NOTE** -- This is another place where having each microservice per
+> sub-component can come in handy, because developers have the option to combine
+> requests server-side. This comes with the drawback that different subpages
+> are working with differently structured data from an API, and it can be
+> confusing to cross-reference API documentation with custom request-combining code.
+> I do not have production experience with GraphQL, which may be an interesting
+> solution to this problem, as long as we do not ignore the potential side
+> effects of relying on shared data and sufficiently test end-to-end experiences.
+
+### Visual consistency
+
+If you let everyone do their best to implement designs to spec, you will
+invariably have a UI and UX that wildly diverges as you move throughout
+your application. The core solution to this problem is a design system:
+a component library, implemented in code, combined with standards, governance,
+and processes for introducing changes. It is versioned and released like
+any other product. You can't get away with sharing CSS and expecting it to
+work out. As I've described in my talk about [building design systems that scale]({{< ref "speaking.md#tech-behind-a-design-system-that-scales" >}}),
+CSS is the wrong level of abstraction for building UI components because
+it does not sufficiently encapsulate function, behavior, and design.
+
+### How to share code in general {#how-to-share-code}
+
+This brings me to a larger point -- sharing code in general. Whether you're
+deploying code independently or not, sharing code in a large app can become
+tricky as often times "reusable" code becomes brittle and side-effect
+ridden if not thoughtfully considered. I would encourage you to share code
+via libraries which are separately versioned and released. You can hear
+more of my thoughts on how to share code in larger apps in my talk about
+[building resilient frontend architecture]({{< ref "speaking.md#building-resilient-frontend-architecture" >}}).
+
+Do as much as you can to automate and ease updating these libraries for the
+teams, so it's more or less effortless for them to keep up-to-date.
+
+### End-to-end testing
+
+Despite the fact that you may deploy independently, your end-to-end tests
+need to run on the composed application and should include user stories
+that cross technical and team boundaries. This is a massive topic, but
+don't forget about it when setting up the CI aspect of your independently
+deployable subcomponents.
+
+### What about being "framework agnostic"? {#framework-agnostic}
+
+One of the big draws (and the big turn-offs, for many) of microfrontends
+is the potential of being "framework agnostic". As with everything, there 
+are tradeoffs -- Are you really going to implement your design system
+in multiple frameworks? Is that the best way to spend your resources?
+Are there real merits for choosing to add a new framework over the existing
+one when comparing our modern options, e.g. React, Vue, Angular? Or is it
+that it's easier not to try to form a consensus? And finally -- is the
+extra page weight, loading time for our users, learning curve, custom setups,
+and variance of best practices worth it?
+
+Naturally, in an independently deployed subcomponent, you can glue together
+just about anything with JavaScript. The question is what the balance of
+tradeoffs is in a specific app, and if a company honestly has the resources
+to maintain a multi-framework setup (or, a micro-frontend setup for that matter).
+
+Microfrontends can enable more team autonomy, but there is a fine line between
+autonomy and anarchy. Core constraints and architectural patterns must be
+standardized and enforced in a way that is as automated as possible.
+
+## Final words
+
+Distributed frontend apps is not a solved problem. We are all striving for a
+good balance between user experience, developer experience, and scalability.
+There are many approaches, and many people do it differently. In this space, we
+are severely missing best practices and shared learnings (both from successes
+and failures).  Most talks about microfrontends, including mine, can only
+scratch the surface of all the complexity and setup required to get it done.
+Working demos are great, but we need more large-scale application studies as the
+frontend becomes more featureful and more complex. If you're working in an
+environment like this, whether you're happy with your setup or struggling to
+make it fit together, please share your story so we can learn from each other!
 
 ## References
 
 Most of this concept is gluing together tons of different concepts and
-tutorials.  Here are a few of the resources that I found most useful when
+tutorials. Here are a few of the resources that I found most useful when
 creating this proof of concept.
+
+### Docker, Kubernetes, and Helm
 
 * [Tips for developing locally with Docker for Mac and Kubernetes](https://github.com/jnewland/local-dev-with-docker-for-mac-kubernetes)
 * [Introduction to Kubernetes Ingresses](https://medium.com/@cashisclay/kubernetes-ingress-82aa960f658e)
@@ -672,3 +822,22 @@ creating this proof of concept.
 * [Custom nginx ingress controller on GCE](https://zihao.me/post/cheap-out-google-container-engine-load-balancer/)
 * [Introduction to Helm](https://www.digitalocean.com/community/tutorials/an-introduction-to-helm-the-package-manager-for-kubernetes)
 * [Telepresence: Local development against a remote Kubernetes cluster](https://github.com/telepresenceio/telepresence)
+
+### Talks and blog posts on microfrontends
+
+{{% callout %}}
+
+**Want to work on interesting problems like this?**
+
+We are hiring engineers to work on our microfrontends solution, among
+other challenging projects like our shared libraries, tooling, design
+system, and developer productivity for the web. If that sounds like
+something you'd enjoy, check out these two listings:
+
+* [Senior Frontend Engineer](#)
+* [Web Architect](#)
+
+Feel free to reach out on twitter or by email if you feel like a strong
+match for either of these roles.
+
+{{% /callout %}}

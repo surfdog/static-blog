@@ -59,7 +59,7 @@ please [contact me](/contact).
 
 ## Talks
 
-### Building resilient frontend architecture ([Slides](/building-resilient-frontend-architecture.pdf))
+### Building resilient frontend architecture ([Slides](/building-resilient-frontend-architecture.pdf)) {#building-resilient-frontend-architecture}
 
 Change is inevitable. So is legacy. And too often, we as developers (who love
 to solve problems by coding) fall into the trap of believing the only way to
@@ -71,8 +71,10 @@ dispel some commonly-held myths, and look at specific tools and techniques on a
 scale from micro to macro that you can use today to keep your app from turning
 into that infamous ball of mud.
 
-> This talk was given at **Agent Conf**, **FrontCon** ([YouTube](https://www.youtube.com/watch?v=YNVS6sAwXm4)), **React Finland** ([YouTube](https://www.youtube.com/watch?v=brMZLmZ1HR0)), and
-> **React Not a Conf** ([YouTube](https://www.youtube.com/watch?v=W3HQII-l8Tk)).
+> This talk was given at **Agent Conf**, **FrontCon** ([YouTube](https://www.youtube.com/watch?v=YNVS6sAwXm4)),
+> **React Finland** ([YouTube](https://www.youtube.com/watch?v=brMZLmZ1HR0)), and
+> **React Not a Conf** ([YouTube](https://www.youtube.com/watch?v=W3HQII-l8Tk))
+> as well as the **ReactJS Girls** meetup.
 
 ### Independent deployment of the frontend with Docker and Kubernetes
 
@@ -101,7 +103,7 @@ system up for success from the start.
 
 > This talk was given at **React Day Berlin** ([YouTube](https://www.youtube.com/watch?v=kPXJ5ERg9Wo&t=8710s))
 
-### The tech behind a design system that scales ([Slides](/tech-behind-a-design-system-that-scales-brazil-js.pdf))
+### The tech behind a design system that scales ([Slides](/tech-behind-a-design-system-that-scales-brazil-js.pdf)) {#tech-behind-a-design-system-that-scales}
 
 Design systems are a powerful way to scale a visual language across different
 products and technologies. This talk covers what a design system is and how a
@@ -110,4 +112,4 @@ developers, products, and parallel processes grows. You'll also learn about
 critical considerations and best practices you'll want to apply when
 introducing a design system at your company.
 
-> This talk was given at **BrazilJS** ([YouTube](https://www.youtube.com/embed/CzTnQg5Mg2E)), **React Open Source Berlin Meetup** (<a href="https://www.youtube.com/watch?v=nVcjaiTRgSY" target="_blank">Youtube</a>) and **React Vienna Meetup** (<a href="https://www.youtube.com/watch?v=mtCxN_IEudk" target="_blank">Youtube</a>).
+> This talk was given at **BrazilJS** ([YouTube](https://www.youtube.com/embed/CzTnQg5Mg2E)), **React Open Source Berlin** meetup (<a href="https://www.youtube.com/watch?v=nVcjaiTRgSY" target="_blank">Youtube</a>) and **React Vienna** meetup (<a href="https://www.youtube.com/watch?v=mtCxN_IEudk" target="_blank">Youtube</a>).
