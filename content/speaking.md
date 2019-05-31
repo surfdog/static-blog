@@ -17,7 +17,7 @@ the talks I've given.
   </thead>
   <tbody>
     <tr>
-      <td><a href="http://react-not-a-conf.com/" target="_blank">React Not a Conf</a> (Upcoming)</td>
+      <td><a href="http://react-not-a-conf.com/" target="_blank">React Not a Conf</a></td>
       <td>May 11, 2019</td>
       <td>Sofia, Bulgaria</td>
     </tr>
@@ -68,7 +68,8 @@ dispel some commonly-held myths, and look at specific tools and techniques on a
 scale from micro to macro that you can use today to keep your app from turning
 into that infamous ball of mud.
 
-> This talk was given at **Agent Conf**, **FrontCon**, and **React Finland**.
+> This talk was given at **Agent Conf**, **FrontCon** ([YouTube](https://www.youtube.com/watch?v=YNVS6sAwXm4)), **React Finland** ([YouTube](https://www.youtube.com/watch?v=brMZLmZ1HR0)), and
+> **React Not a Conf** ([YouTube](https://www.youtube.com/watch?v=W3HQII-l8Tk)).
 
 ### Independent deployment of the frontend with Docker and Kubernetes
 
