@@ -2,8 +2,11 @@
 title: "Speaking"
 ---
 
+![Speaking at BrazilJS](/images/braziljs.jpg)
+
 These are conferences I will or have spoken at, as well as summaries of
-the talks I've given. 
+the talks I've given. If you'd like to have me speak at your event,
+please [contact me](/contact).
 
 ## Conferences
 

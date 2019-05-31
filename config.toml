@@ -55,6 +55,11 @@ enableEmoji = true
     weight = 4
 
 [[menu.main]]
+    name = "Work with Me"
+    url = "/work-with-me"
+    weight = 5
+
+[[menu.main]]
     name = "Contact"
     url = "/contact"
-    weight = 5
+    weight = 6
