@@ -580,7 +580,7 @@ but I will just quickly point out a couple of things worth mentioning:
   simplicity's sake, I have not added this extra step in the sample code.
 
 For a full tutorial about how to deploy to a k8s cluster in GKE using
-CircleCI, check out [this blog post](http://www.url.com) which
+CircleCI, check out [this blog post](#) which
 explained everything I needed to get it working, _except_ what I mentioned
 above about adjusting the permissions of the existing service account.
 
@@ -777,7 +777,8 @@ deployable subcomponents.
 ### What about being "framework agnostic"? {#framework-agnostic}
 
 One of the big draws (and the big turn-offs, for many) of microfrontends
-is the potential of being "framework agnostic". As with everything, there 
+is the potential of being "framework agnostic". Meaning, in short, that you
+can mix different frameworks together in the frontend. As with everything, there 
 are tradeoffs -- Are you really going to implement your design system
 in multiple frameworks? Is that the best way to spend your resources?
 Are there real merits for choosing to add a new framework over the existing
@@ -793,11 +794,11 @@ to maintain a multi-framework setup (or, a micro-frontend setup for that matter)
 
 Microfrontends can enable more team autonomy, but there is a fine line between
 autonomy and anarchy. Core constraints and architectural patterns must be
-standardized and enforced in a way that is as automated as possible.
+standardized and enforced across applications in a way that is as automated as possible.
 
 ## Final words
 
-Distributed frontend apps is not a solved problem. We are all striving for a
+**Distributed frontend apps is not a solved problem.** We are all striving for a
 good balance between user experience, developer experience, and scalability.
 There are many approaches, and many people do it differently. In this space, we
 are severely missing best practices and shared learnings (both from successes
