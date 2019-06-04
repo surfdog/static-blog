@@ -84,7 +84,7 @@ Luckily, Docker and Kubernetes can alleviate a lot of these issues, and we’ll
 walk through a minimal but concrete example of building a microfrontends
 architecture with these tools on your local machine.  Finally, you’ll see how
 you could migrate gradually and what it takes to bring this architecture to
-eroduction. No previous knowledge of Docker or Kubernetes is required.
+production. No previous knowledge of Docker or Kubernetes is required.
 
 > This talk was given at **JS Kongress**.
 
