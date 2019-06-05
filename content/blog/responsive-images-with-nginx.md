@@ -271,11 +271,11 @@ such as inlining critical CSS, leveraging caching, etc.
 <br/>
 <center style="font-size: 1.5em; text-decoration: underline">Mobile Score</center>
 
-![PageSpeed Score Mobile](/blog/images/pagespeed-mobile.png "PageSpeed Score Mobile")
+![PageSpeed Score Mobile](/images/pagespeed-mobile.png "PageSpeed Score Mobile")
 
 <center style="font-size: 1.5em; text-decoration: underline">Desktop Score</center>
 
-![PageSpeed Score Desktop](/blog/images/pagespeed-desktop.png "PageSpeed Score Desktop")
+![PageSpeed Score Desktop](/images/pagespeed-desktop.png "PageSpeed Score Desktop")
 
 I can't speak for how this would scale, to give you an idea, my blog gets
 about 30k pageviews per month / 1-1.3k per day, so it's not massive, but it
