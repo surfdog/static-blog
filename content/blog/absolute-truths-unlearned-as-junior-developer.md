@@ -61,8 +61,10 @@ Fast forward to my latest job, which I got after 5 years of "combined" student
 and professional experience (which I thought was the same as normal
 experience). Yet in that time, I basically never had my code reviewed. I
 deployed by ssh-ing into a server and running git pull. I'm rather sure I never
-had to open a Pull Request. And yet, I applied for a position for "Senior
-Frontend Engineer", got an offer, and accepted it.
+had to open a Pull Request. Don't get me wrong, I learned a ton of awesome
+stuff at my first two jobs, but I'd never really worked with other devs in the
+same codebase. And yet, I applied for a position for "Senior Frontend
+Engineer", got an offer, and accepted it.
 
 **There I was, a senior developer at the ripe age of 24 years old.**
 
