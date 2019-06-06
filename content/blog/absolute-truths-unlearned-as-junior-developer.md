@@ -2,6 +2,7 @@
 title: "7 absolute truths I unlearned as junior developer"
 date: 2019-06-03T16:58:41+02:00
 type: "posts"
+thumbnail: "/images/typing-with-flowers.jpg"
 ---
 
 Next year, I'll be entering my 10th year of being formally employed to write code.
