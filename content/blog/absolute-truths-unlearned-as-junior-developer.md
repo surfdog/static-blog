@@ -23,8 +23,8 @@ so multi-faceted. Or maybe you'll find this post encouraging because you're
 already so far ahead of where I was at your stage.
 
 <u>For today's senior developers</u>: Maybe you can relate, and also have
-some funny (and humbling) stories to share about your own life lessons as a
-junior dev.
+some funny (and humbling) stories to share about your own life lessons when you
+were a junior dev.
 
 To be clear, **I think junior developers are awesome** and just showing up
 to learn already takes a ton of courage. This post is about my own journey
@@ -363,7 +363,7 @@ a necessary but not sufficient condition for seniority. It also has to be the
 right kind of experience in which you internalized the right lessons and
 successfully apply those learnings for the future. Sometimes bigger lessons can
 take a year or more to fully manifest -- that's why years of experience still
-matters, even if you're a really good coder.
+matter, even if you're a really good coder.
 
 **We're all still junior in some areas.** No matter how much experience you have,
 there are still places where you don't know much. Admitting what you don't
@@ -378,7 +378,7 @@ people who are more experienced.
 > It's a great read if you're grappling with what point you're at in your
 > journey and find yourself wondering, "What does it mean to be senior?"
 
-## What's the number one lesson you learned as a junior developer? Or the number one lesson you're learning right now?
+## What's the number one lesson you learned when you were a junior developer? Or the number one lesson you're learning right now?
 
 I'd love to hear your own stories and how you look back on your years
 of experience. Let me know on Twitter [@monicalent](https://twitter.com/monicalent)!
