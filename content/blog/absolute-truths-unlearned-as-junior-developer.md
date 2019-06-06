@@ -29,7 +29,7 @@ to learn already takes a ton of courage. This post is about my own journey
 and learnings, and isn't meant to be a generalization about how all junior
 devs think or behave.
 
-I hope you enjoy the post and can relate a little bit :smile:
+I hope you enjoy the post and can relate a little bit <span aria="hidden">:smile:</span>
 
 > <small><i>Thanks to {{< a_blank "Artem" "https://twitter.com/iamsapegin" >}}
 > and {{< a_blank "Sara" "https://twitter.com/NikkitaFTW" >}}
@@ -51,9 +51,9 @@ Since I'd been coding in my bedroom for a couple of years, I was pretty
 sure those years counted as "years of experience". So when I was asked about
 how much experience I had writing PHP, I confidently answered, "3 or 4 years!"
 
-I thought I knew a lot about SQL because I could do outer joins :sunglasses:
+I thought I knew a lot about SQL because I could do outer joins <span aria="hidden">:sunglasses:</span>
 
-And when I googled it, 3-4 years of experience meant I should be making :moneybag:
+And when I googled it, 3-4 years of experience meant I should be making <span aria="hidden">:moneybag:</span>
 
 Fast forward to my latest job, which I got after 5 years of "combined" student
 and professional experience (which I thought was the same as normal
@@ -69,7 +69,7 @@ right?! Surely, my impressive experience had brought me to this point, and
 people should listen to me!! Already at the pinnacle of my technical career,
 and the youngest developer in the office.
 
-Like a boss :nail_care:
+Like a boss <span aria="hidden">:nail_care:</span>
 
 {{% callout %}}
 
@@ -117,7 +117,7 @@ Because, well, it's free.
 
 You're also not responsible to make any money or produce results, but that is
 an entirely different blog post ranting about being a developer in academia
-:sparkles:
+<span aria="hidden">:sparkles:</span>
 
 **Long story short, I left academia with lots of expectations.**
 
@@ -145,6 +145,9 @@ thought it would be.
 
 But not because people didn't know _how_ to write the tests.
 
+They'd either never felt the pain of not having tests, or they'd felt the
+pain of having _legacy_ tests. Two things I'd never experienced either.
+
 {{% callout %}}
 
 #### What I eventually learned
@@ -159,7 +162,7 @@ recruit you to tell you about the state of the codebase.
 **No company has a perfect tech setup.** Every company has problems, every
 company has technical debt. The question is what they're doing about it. We
 should have no illusions when applying for jobs that there is work to be done
--- or else they wouldn't be hiring 😉
+-- or else they wouldn't be hiring <span aria="hidden">😉</span>
 
 **Being overly opinionated on topics you lack real-world experience with is
 pretty arrogant.** I came across as SUCH a know-it-all, insisting there must be
@@ -218,7 +221,7 @@ the lottery.
 
 Imagine 50+ comments on your PR with all the semicolons you missed!
 
-Because I had eyes like an eagle and this eagle wants those high-quality semicolons :eagle:
+Because I had eyes like an eagle and this eagle wants those high-quality semicolons <span aria="hidden">:eagle:</span>
 
 (Luckily I no longer have eagle eyes after staring at the computer for
 many years, so you're all spared -- #kiddingnotkidding)
@@ -241,7 +244,7 @@ the application than tiny bits of code early on.
 
 **Code quality is important**, don't get me wrong. But code quality wasn't
 what I thought it was, which was things like linting and formatting or whatever
-style was promoted in the latest blog post I had read 🙈
+style was promoted in the latest blog post I had read <span aria="hidden">🙈</span>
 
 {{% /callout %}}
 
@@ -256,7 +259,7 @@ happened, I rewrote all the code instead of trying to figure out how it worked.
 Anyways.
 
 It didn't help that it was AngularJS code written by Ruby developers,
-or that I was a junior developer who didn't know she was junior  🕵🏻‍♀️
+or that I was a junior developer who didn't know she was junior  <span aria="hidden">🕵🏻‍♀️</span>
 
 So how did I handle the fact that 300 lines of unfamiliar code made me
 feel like I was drowning?
@@ -267,7 +270,7 @@ I started commenting _everything_ just to try to make sense out of it.
 Annotations for every function I could get my hands on.
 
 I learned all that fancy Angular-specific JSDoc syntax. My code was always
-twice as long because it had so much documentation and so many comments :ok_hand:
+twice as long because it had so much documentation and so many comments <span aria="hidden">:ok_hand:</span>
 
 {{% callout %}}
 
@@ -356,7 +359,7 @@ a necessary but not sufficient condition for seniority. It also has to be the
 right kind of experience in which you internalized the right lessons and
 successfully apply those learnings for the future. Sometimes bigger lessons can
 take a year or more to fully manifest -- that's why years of experience still
-matters, even if you're a good coder.
+matters, even if you're a really good coder.
 
 **We're all still junior in some areas.** No matter how much experience you have,
 there are still places where you don't know much. Admitting what you don't
