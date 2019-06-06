@@ -340,7 +340,7 @@ When a solution is apparent, I can just type away and the code will follow.
 It's like writing a blog post or an email. I could code the solution faster
 than others, and typically took on the more complex projects for myself.
 
-For a long time I thought that was what it mean to to be a senior developer.
+For a long time I thought that was what it meant to to be a senior developer.
 
 Because why not? The job title is "senior developer", not "senior communicator"
 or "senior project manager". I didn't really understand how many other skills I
