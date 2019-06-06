@@ -1,6 +1,6 @@
 ---
 title: "7 absolute truths I unlearned as junior developer"
-description: "A few things I strongly believed as a junior developer which turned out to be wrong."
+description: "A few things I strongly believed when I was a junior developer which turned out to be wrong."
 date: 2019-06-03T16:58:41+02:00
 type: "posts"
 thumbnail: "/images/typing-with-flowers.jpg"
