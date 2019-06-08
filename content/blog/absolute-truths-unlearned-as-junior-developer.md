@@ -150,7 +150,7 @@ thought it would be.
 But not because people didn't know _how_ to write the tests.
 
 They'd either never felt the pain of not having tests, or they'd felt the
-pain of having _legacy_ tests. Two things I'd never experienced either.
+pain of having _legacy_ tests. Two things I'd never experienced for myself.
 
 {{% callout %}}
 
