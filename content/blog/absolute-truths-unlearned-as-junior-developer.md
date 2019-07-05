@@ -212,6 +212,8 @@ understand yet.
 
 {{% /callout %}}
 
+{{< subscribe >}}
+
 ### 4. Code quality matters most
 
 Back in the day, **getting a code review from me could be brutal**.
