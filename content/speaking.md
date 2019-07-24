@@ -4,11 +4,11 @@ title: "Speaking"
 
 ![Speaking at BrazilJS](/images/braziljs.jpg)
 
+## Conferences
+
 These are conferences I will or have spoken at, as well as summaries of
 the talks I've given. If you'd like to have me speak at your event,
 please [contact me](/contact).
-
-## Conferences
 
 <table style="width: 100%">
   <thead>
@@ -111,3 +111,11 @@ critical considerations and best practices you'll want to apply when
 introducing a design system at your company.
 
 > This talk was given at **BrazilJS** ([YouTube](https://www.youtube.com/embed/CzTnQg5Mg2E)), **React Open Source Berlin Meetup** (<a href="https://www.youtube.com/watch?v=nVcjaiTRgSY" target="_blank">Youtube</a>) and **React Vienna Meetup** (<a href="https://www.youtube.com/watch?v=mtCxN_IEudk" target="_blank">Youtube</a>).
+
+## Podcasts
+
+I've participated in the following podcasts. If you'd like to invite me to
+participate in yours, please [contact me](/contact).
+
+* {{< a_blank "React Not a Conf Speaker Panel Podcast" "https://krasimirtsonev.com/blog/article/nadcast-21-react-not-a-conf" >}} (May 5, 2019)
+* React Helsinki Conference Podcast (Apr. 26, 2019)

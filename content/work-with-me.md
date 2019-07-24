@@ -1,5 +1,6 @@
 ---
 title: "Work with me"
+draft: true
 ---
 
 ![Taken at React Finland](/images/react-finland-2.jpg)
