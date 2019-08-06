@@ -16,6 +16,6 @@ My roles have ranged from individual contributor to technical lead and manager.
 
 These days I'm leading a distributed team of 15+ frontend engineers at
 [SumUp](https://sumup.com), a German fintech company I've worked at as it grew
-from 80 to more than 1,5000 people in the last 4+ years.
+from 80 to more than 1,500 people in the last 4+ years.
 
 Find me online [@monicalent](https://twitter.com/monicalent).
