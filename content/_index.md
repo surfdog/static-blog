@@ -1,6 +1,6 @@
 <div>
   <div style="text-align: center; padding: 12px">
-    <img style="border-radius: 100%; height: 150px; width: 150px;" src="/images/photo.jpg"/>
+    <img style="border-radius: 100%; height: 150px; width: 150px;" src="/images/photo-square.jpg"/>
   </div>
   <div style="text-align: center; padding: 12px">
     <p>

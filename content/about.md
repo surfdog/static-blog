@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-![Monica Lent](/images/photo-about.jpg)
+![Monica Lent](/images/photo-rectangle.jpg)
 
 Hi, my name is Monica. I'm an American software engineer and engineering
 manager living and working in Berlin, Germany.
