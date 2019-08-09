@@ -6,6 +6,11 @@ thumbnail: "/images/typing-with-flowers-2.jpg"
 ---
 
 
+
+
+**Humane technical interviews don't have to be easy.**
+
+
 ## Tips for giving humane technical interviews
 
 ### Know what you're looking for first
