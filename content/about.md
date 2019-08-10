@@ -16,7 +16,7 @@ My roles have ranged from individual contributor to technical lead and manager.
 
 These days I'm leading a distributed team of 15+ frontend engineers at
 [SumUp](https://sumup.com), a German fintech company I've worked at as it grew
-from 80 to more than 1,500 people in the last 4+ years.
+from 80 to more than 1,500 people for nearly 5 years now.
 
 In my spare time, I'm building [Affilimate](https://affilimate.io), an
 affiliate analytics and optimization tool, which is currently in a private
