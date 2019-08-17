@@ -2,14 +2,10 @@
 title: "On giving humane technical interviews"
 date: 2019-07-24T22:22:47+02:00
 type: "posts"
-thumbnail: "/images/typing-with-flowers-2.jpg"
 ---
 
 
-
-
 **Humane technical interviews don't have to be easy.**
-
 
 ## Tips for giving humane technical interviews
 
