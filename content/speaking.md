@@ -20,6 +20,11 @@ please [contact me](/contact).
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://gotober.com/" target="_blank">GOTO Berlin</a> (Upcoming)</td>
+      <td>October 21-22, 2019</td>
+      <td>Berlin, Germany</td>
+    </tr>
+    <tr>
       <td><a href="http://react-not-a-conf.com/" target="_blank">React Not a Conf</a></td>
       <td>May 11, 2019</td>
       <td>Sofia, Bulgaria</td>
