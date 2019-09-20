@@ -20,7 +20,7 @@ from 80 to more than 1,500 people for nearly 5 years now.
 
 In my spare time, I'm building [Affilimate](https://affilimate.io), an
 affiliate analytics and optimization tool, which is currently in a private
-beta. I also blog about travel and photography on [Not a Nomad Blog](https://notanomadblog.com),
-which reaches over 40,000 unique users per month.
+beta. I also write about travel and photography on [Not a Nomad Blog](https://notanomadblog.com),
+which reaches over 45,000 unique readers per month.
 
 Find me online [@monicalent](https://twitter.com/monicalent).
