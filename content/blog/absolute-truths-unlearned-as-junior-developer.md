@@ -380,6 +380,9 @@ people who are more experienced.
 > It's a great read if you're grappling with what point you're at in your
 > journey and find yourself wondering, "What does it mean to be senior?"
 
+<style>.twitter-tweet { margin-left: auto; margin-right: auto; }</style>
+<blockquote class="twitter-tweet" style="margin: 0 auto"><p lang="en" dir="ltr">👋 I was feeling all reflective and wrote up a post about a few things I used to *strongly* believe as a junior dev...which turned out not to be the full picture 😉 Tell me if you can relate! <a href="https://t.co/a6Sa1LMsiU">https://t.co/a6Sa1LMsiU</a></p>&mdash; Monica Lent (@monicalent) <a href="https://twitter.com/monicalent/status/1136658001455210497?ref_src=twsrc%5Etfw">June 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## What's the number one lesson you learned when you were a junior developer? Or the number one lesson you're learning right now?
 
 I'd love to hear your own stories and how you look back on your years

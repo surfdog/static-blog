@@ -1,7 +1,14 @@
 ---
 title: "Work with me"
-draft: true
 ---
+
+{{% callout %}}
+
+While I'm not currently looking for fulltime work as I focus on building my own
+startup, I am accepting consulting jobs. Please [contact me](/contact) to figure
+out what that could look like.
+
+{{% /callout %}}
 
 ![Taken at React Finland](/images/react-finland-2.jpg)
 
@@ -46,7 +53,7 @@ If you're curious about working together, please [contact me](/contact).
 2. **Empathy** -- The only way to build sustainable software is to empathize
    with your customers and your colleagues. Ask questions and be open to other
    points of view.
-3. **Curiosity** -- Being open and interested to learn continuously is
+3. **Openness** -- Being open and interested to learn continuously is
    important, both for individuals and for organizations at large.
 4. **Humility** -- I'm a strong believer in servant leadership. My job is not
    to be the superstar but to help other people learn, understand the "why",
@@ -57,10 +64,11 @@ If you're curious about working together, please [contact me](/contact).
 At my core, I'm a self-taught developer who started coding at 10 years old.
 From there I supplemented my knowledge by studying Computer Science, and have
 been working in software engineering for nearly a decade -- both as an
-individual contributor and as a manager. My current challenge
-is my work at [SumUp](https://sumup.com), an international FinTech company
-that I've been with on its journey from 80 to more than 1,500 employees as
-its Frontend Lead.
+individual contributor and as a manager. My most recent challenge
+was my work at [SumUp](https://sumup.com), an international FinTech company
+that I've been with on its journey from 80 to more than 1,500 employees as its
+Frontend Lead during a period of hypergrowth for the last 5 years. Today I'm
+building my own analytics startup for content creators.
 
 For more information on my past work, you can [read my CV](/cvs/monica_lent_resume_2019.pdf).
 

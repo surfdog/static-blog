@@ -20,6 +20,16 @@ please [contact me](/contact).
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://react-finland.fi/" target="_blank">React Finland</a> (Upcoming)</td>
+      <td>May 26-29, 2020</td>
+      <td>Helsinki, Finland</td>
+    </tr>
+    <tr>
+      <td><a href="https://jsheroes.io/" target="_blank">JS Heroes</a> (Upcoming)</td>
+      <td>April 23-24, 2020</td>
+      <td>Cluj-Napoca, Romania</td>
+    </tr>
+    <tr>
       <td><a href="https://gotober.com/" target="_blank">GOTO Berlin</a> (Upcoming)</td>
       <td>October 21-22, 2019</td>
       <td>Berlin, Germany</td>
@@ -76,7 +86,7 @@ dispel some commonly-held myths, and look at specific tools and techniques on a
 scale from micro to macro that you can use today to keep your app from turning
 into that infamous ball of mud.
 
-> This talk was given at **Agent Conf**, **FrontCon** ([YouTube](https://www.youtube.com/watch?v=YNVS6sAwXm4)), **React Finland** ([YouTube](https://www.youtube.com/watch?v=brMZLmZ1HR0)), and
+> This talk was given at **Agent Conf** ([YouTube](https://www.youtube.com/watch?v=HudXYWLBTHw)), **FrontCon** ([YouTube](https://www.youtube.com/watch?v=YNVS6sAwXm4)), **React Finland** ([YouTube](https://www.youtube.com/watch?v=brMZLmZ1HR0)), and
 > **React Not a Conf** ([YouTube](https://www.youtube.com/watch?v=W3HQII-l8Tk)).
 
 ### Independent deployment of the frontend with Docker and Kubernetes

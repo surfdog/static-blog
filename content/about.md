@@ -14,13 +14,18 @@ processing, e-learning, and fintech.
 
 My roles have ranged from individual contributor to technical lead and manager.
 
-These days I'm leading a distributed team of 15+ frontend engineers at
+Most recently, I was leading a distributed team of 15+ frontend engineers at
 [SumUp](https://sumup.com), a German fintech company I've worked at as it grew
-from 80 to more than 1,500 people for nearly 5 years now.
+from 80 to more than 1,500 people about 5 years.
 
-In my spare time, I'm building [Affilimate](https://affilimate.io), an
-affiliate analytics and optimization tool, which is currently in a private
-beta. I also write about travel and photography on [Not a Nomad Blog](https://notanomadblog.com),
-which reaches over 45,000 unique readers per month.
+Today, I'm building my own startup called [Affilimate](https://affilimate.io), a
+tool that helps bloggers earn more from their content with actionable affiliate analytics.
+It's currently in prviate beta, but you're welcome to email me for an invite
+or about partnership opportunities.
+
+In my spare time, I blog about travel and photography on [Not a Nomad Blog](https://notanomadblog.com),
+which reaches over 55,000 unique readers per month.
+
+Interested in working together? Learn more on my [work with me](/work-with-me) page.
 
 Find me online [@monicalent](https://twitter.com/monicalent).
