@@ -24,7 +24,7 @@ It's currently in prviate beta, but you're welcome to email me for an invite
 or about partnership opportunities.
 
 In my spare time, I blog about travel and photography on [Not a Nomad Blog](https://notanomadblog.com),
-which reaches over 55,000 unique readers per month.
+which reaches over 60,000 unique readers per month.
 
 Interested in working together? Learn more on my [work with me](/work-with-me) page.
 
