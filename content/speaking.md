@@ -30,8 +30,8 @@ please [contact me](/contact).
       <td>Cluj-Napoca, Romania</td>
     </tr>
     <tr>
-      <td><a href="https://gotober.com/" target="_blank">GOTO Berlin</a> (Upcoming)</td>
-      <td>October 21-22, 2019</td>
+      <td><a href="https://gotober.com/" target="_blank">GOTO Berlin</a></td>
+      <td>October 23-25, 2019</td>
       <td>Berlin, Germany</td>
     </tr>
     <tr>
