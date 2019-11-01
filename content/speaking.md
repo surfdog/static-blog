@@ -132,5 +132,6 @@ introducing a design system at your company.
 I've participated in the following podcasts. If you'd like to invite me to
 participate in yours, please [contact me](/contact).
 
+* {{< a_blank "React Round Up" "https://devchat.tv/react-round-up/rru-085-building-resilient-architecture-with-monica-lent/" >}} (Oct 29, 2019)
 * {{< a_blank "React Not a Conf Speaker Panel Podcast" "https://krasimirtsonev.com/blog/article/nadcast-21-react-not-a-conf" >}} (May 5, 2019)
-* React Helsinki Conference Podcast (Apr. 26, 2019)
+* {{< a_blank "React Helsinki Conference Podcast" "https://webbidevaus.fi/47" >}} (Apr. 26, 2019)
