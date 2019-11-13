@@ -20,7 +20,7 @@ from 80 to more than 1,500 people about 5 years.
 
 Today, I'm building my own startup called [Affilimate](https://affilimate.io), a
 tool that helps bloggers earn more from their content with actionable affiliate analytics.
-It's currently in prviate beta, but you're welcome to email me for an invite
+It's currently in private beta, but you're welcome to email me for an invite
 or about partnership opportunities.
 
 In my spare time, I blog about travel and photography on [Not a Nomad Blog](https://notanomadblog.com),
